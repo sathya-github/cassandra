@@ -1,0 +1,24 @@
+Cassandra 
+
+
+To make the loopback interfaces available for Cassandra
+
+sudo ifconfig lo0 alias 127.0.0.2
+sudo ifconfig lo0 alias 127.0.0.3
+sudo ifconfig lo0 alias 127.0.0.4
+sudo ifconfig lo0 alias 127.0.0.5
+sudo ifconfig lo0 alias 127.0.0.6
+
+
+Create a Cluster through CCM
+
+ccm create easybuy -v 4.1.5 -n 5 -s --pwd-auth
+
+CCM Commands
+
+ccm list
+ccm status
+ccm stop
+ccm start
+ccm remove
+ccm node1 show
